@@ -113,7 +113,7 @@ PIXI.JsonLoader.prototype.load = function () {
  */
 PIXI.JsonLoader.prototype.onJSONLoaded = function () {
     
-    if(!this.ajaxRequest.responseText || this.ajaxRequest.responseText === 'NOT_FOUND')
+    if(!this.ajaxRequest.responseText || this.ajaxRequest.responseText === 'NOT FOUND')
     {
         this.onError();
         return;
