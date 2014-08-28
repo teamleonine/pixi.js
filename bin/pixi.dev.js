@@ -1,10 +1,10 @@
 /**
  * @license
- * pixi.js - v1.6.0
+ * pixi.js - v1.6.1
  * Copyright (c) 2012-2014, Mat Groves
  * http://goodboydigital.com/
  *
- * Compiled: 2014-07-18
+ * Compiled: 2014-08-28
  *
  * pixi.js is licensed under the MIT License.
  * http://www.opensource.org/licenses/mit-license.php
@@ -9391,6 +9391,7 @@ PIXI.CanvasRenderer.prototype.render = function(stage)
 
     this.context.setTransform(1,0,0,1,0,0);
     this.context.globalAlpha = 1;
+    this.context.globalCompositeOperation = PIXI.blendModesCanvas[PIXI.blendModes.NORMAL];
 
     if (navigator.isCocoonJS && this.view.screencanvas) {
         this.context.fillStyle = "black";
