@@ -14329,7 +14329,7 @@ PIXI.JsonLoader.prototype.load = function () {
  */
 PIXI.JsonLoader.prototype.onJSONLoaded = function () {
     
-    if(!this.ajaxRequest.responseText )
+    if(!this.ajaxRequest.responseText || this.ajaxRequest.responseText === 'NOT FOUND')
     {
         this.onError();
         return;
